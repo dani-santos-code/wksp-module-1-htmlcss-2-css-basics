@@ -1,12 +1,63 @@
 /* minor CSS reset */
 /* You should not need to change anything here */
-html, body, div, h1, h2, p, ul, li {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+h1,
+h2,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 
 /* ADD CSS BELOW */
+
+/* Scott mentioned that sometimes
+he creates a class with the name of the tag
+I thought it would be a way to distinguish
+these attributesfrom the ones at the top (CSS reset). Not sure I'm doing it right.
+Feedback is appreciated! 🙏*/
+
+.body {
+  font-family: "Bangers", cursive;
+  margin: 10px 10px;
+}
+
+h1 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin: 10px;
+}
+
+h3 {
+  text-align: center;
+}
+
+.section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.thumbnail {
+  max-height: 140px;
+  width: auto;
+  height: auto;
+  padding: 10px;
+}
+
+.card {
+  background-color: rgba(241, 241, 241, 0.8);
+  border: 1px dashed rgb(128, 128, 128);
+  margin: 10px;
+}
