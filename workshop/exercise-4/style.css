@@ -1,27 +1,38 @@
-#centered {
-    text-align: center;
+* {
+  box-sizing: border-box;
 }
 
-.title {
-    font-size: 3rem;
+li {
+  list-style-type: none;
 }
 
-subtitle {
-    font-size: 1.5rem;
+h2 {
+  font-size: 1em;
+  font-weight: normal;
+  text-decoration: underline;
+  margin: 0;
 }
 
-.div {
-    background-color: gray;
+div {
+  background-color: grey;
 }
 
-#li {
-    list-style-type: none;
+.monospaced {
+  font-family: monospace;
+  text-decoration: underline;
 }
 
-content {
-    text-decoration: underline;
+.centered {
+  text-align: center;
+  font-weight: normal;
+  background-color: grey;
+  margin: 0;
 }
 
-monospaced {
-    font-family: monospace;
+#subtitle {
+  font-size: 1.5rem;
+}
+
+#title {
+  font-size: 3rem;
 }

@@ -1,1 +1,17 @@
-/* ...crickets... */
+/* I'm not using font-size
+here because it defaults to
+2em on Chrome, Firefox and Safari */
+.title {
+  text-align: center;
+}
+.subtitle {
+  text-align: center;
+}
+
+.content {
+  font-family: "Comic Sans MS";
+}
+
+.emph {
+  font-style: italic;
+}

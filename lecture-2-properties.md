@@ -32,7 +32,16 @@ Write the CSS to make the cat text blue.
 
 ```css
 /* css here */
+p {
+    color: blue;
+}
 
+/* another option would be the following */
+
+.canine,
+.feline {
+        color: blue;
+}
 ```
 
 ---
@@ -50,6 +59,9 @@ Write the CSS to make the cat text blue.
 ```css
 /* css here */
 
+h2 {
+  color: blue;
+}
 ```
 
 ---
@@ -66,6 +78,9 @@ Write the CSS to make the cat text blue.
 ```css
 /* css here */
 
+.royalcat {
+  color: blue;
+}
 ```
 
 ---
@@ -82,7 +97,9 @@ Write the CSS to make the dogs text red.
 
 ```css
 /* css here */
-
+.canine {
+  color: red;
+}
 ```
 
 ---
@@ -99,7 +116,9 @@ Write the CSS to make the dogs text red.
 
 ```css
 /* css here */
-
+h1 {
+  color: red;
+}
 ```
 
 ---
@@ -119,7 +138,7 @@ p {
 }
 
 ```
-
+blue!
 ---
 
 ## The Box Model
@@ -128,12 +147,12 @@ p {
 
 Every HTML element is a box that has 4 properties.
 
-| property  | notes |
-| --------- | ----- |
-| content   | the content 
-| `padding` | space around content
-| `border`  | border around padding
-| `margin`  | space outside of border
+| property  | notes                   |
+| --------- | ----------------------- |
+| content   | the content             |
+| `padding` | space around content    |
+| `border`  | border around padding   |
+| `margin`  | space outside of border |
 
 ---
 
@@ -147,7 +166,7 @@ Every HTML element is a box that has 4 properties.
 | `margin-right`  |
 | `margin-bottom` |
 
---- 
+---
 
 - Shorthand is best
     - `margin: top | right | bottom | left`
@@ -222,7 +241,7 @@ _What is the meaning of `*`?_
 
 ### `display: none`
 
-- The element is completely removed! 
+- The element is completely removed!
 
 ---
 
@@ -234,12 +253,12 @@ _What is the meaning of `*`?_
     - `<form>`
     - `<div>`
 
---- 
+---
 
 - Inline elements
     - `<img>`, `<a>`, `<span>`, `<button>`
     - `<input>`, `<label>`, `<select>`, `<textarea>`
-    - `<abbr>` 
+    - `<abbr>`
 
 [Source](https://www.w3resource.com/html/HTML-block-level-and-inline-elements.php)
 
@@ -252,7 +271,7 @@ _What is the meaning of `*`?_
 ---
 
 ### [`display: none`](https://www.w3schools.com/css/tryit.asp?filename=trycss_display_none)
-### vs. 
+### vs.
 ### [`visibility: hidden`](https://www.w3schools.com/css/tryit.asp?filename=trycss_visibility_hidden)
 
 ---
@@ -339,7 +358,7 @@ Note: When using this property, you will need to set the parent's position as we
 
 ### The basics
 
-- Give the parent container the property `display: flex`. 
+- Give the parent container the property `display: flex`.
 
 This automagically set all of the items inside the container to be side-by-side.
 
@@ -349,17 +368,17 @@ This automagically set all of the items inside the container to be side-by-side.
 
 There are other properties you can give the parent container:
 
-| property          | notes |
-| ----------------- | ----- |
-| `flex-direction`  | default is `row`
-| `flex-wrap`       | default is `nowrap`
-| `justify-content` | main axis
-| `align-items`     | secondary axis
-| `align-content`   | needs mult. rows
+| property          | notes               |
+| ----------------- | ------------------- |
+| `flex-direction`  | default is `row`    |
+| `flex-wrap`       | default is `nowrap` |
+| `justify-content` | main axis           |
+| `align-items`     | secondary axis      |
+| `align-content`   | needs mult. rows    |
 
 ---
 
-The most common recipe for a container is 
+The most common recipe for a container is
 
 ```css
 .container {
@@ -373,18 +392,18 @@ The most common recipe for a container is
 
 ### Children can have `flex` properties too!
 
-| property      | notes |
-| ------------- | ----- |
-| `flex-grow`   | takes up space proportionally
-| `flex-shrink` | shrink if possible
-| `flex-basis`  | default size
-| `order`       | modify source order
+| property      | notes                         |
+| ------------- | ----------------------------- |
+| `flex-grow`   | takes up space proportionally |
+| `flex-shrink` | shrink if possible            |
+| `flex-basis`  | default size                  |
+| `order`       | modify source order           |
 
 ---
 
 Recommended Shorthand notation:
 
-`flex: flex-grow | flex-shrink | flex-basis` 
+`flex: flex-grow | flex-shrink | flex-basis`
 
 ```css
 .child {
